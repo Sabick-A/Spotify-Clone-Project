@@ -1,0 +1,36 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+div{
+    margin: 4px;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+.sidebar{
+    background-color: #272727;
+    border-radius: 1rem;
+    width: 30%;
+
+}
+.content{
+    background-color: #272727;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.player{
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    background-color: black;
+    width:100%
+}
