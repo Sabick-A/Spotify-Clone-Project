@@ -15,12 +15,11 @@ div{
 
 .sidebar{
     border-radius: 0.5rem;
-    width: 18rem;
-
+    width: 28rem;
 }
 
 .nav{
-    background-color: #272727;
+    background-color:#121212;
     height: 6rem;
     border-radius: 0.5rem;
     padding: 0.7rem 0.75rem;
@@ -44,7 +43,7 @@ div{
 }
 
 .content{
-    background-color: #272727;
+    background-color: #121212;
     flex:1;
     border-radius: 1rem;
     overflow: auto;
@@ -53,11 +52,87 @@ div{
 .player{
     position: fixed;
     bottom: 0;
-    height: 72px;
+    height: 4.5rem;
     background-color: black;
     width:100%
 }
 
 .nav_option:hover{
     opacity: 1;
+    cursor: pointer;
 }
+
+.library{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-top: 0.7rem;
+}
+
+.lib-head{
+    display: flex;
+    align-items: center;
+    margin: 0rem 1rem 0rem 1.5rem;
+    justify-content: space-between;
+}
+.lib-options{
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+.lib-head img{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 1rem;
+}
+
+.lib-icons i{
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.lib-icons i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.lib-options:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.box1{
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    height: 8rem;
+    margin: 1rem 0.75rem;
+    line-height: 2rem;
+}
+
+.box1-p1{
+    font-weight: 700;
+}
+
+.box1-p2{
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    height: 2.5rem;
+    width:10rem;
+    font-weight: 700;
+    margin-top: 0.6rem;
+    transition: linear 0.5;
+    border: none;
+}
+
+.badge:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px #313131;
+}
+
+
