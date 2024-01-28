@@ -58,7 +58,7 @@ div{
 .player{
     position: fixed;
     bottom: 0;
-    height: 4.5rem;
+    height: 5rem;
     background-color: black;
     width:100%
 }
@@ -220,7 +220,8 @@ h2{
     width: 100%;
     align-items: center;
     margin-left: 1rem;
-    justify-content: space-between;
+    justify-content: flex-start ;
+    flex-wrap: wrap;
 
 }
 
@@ -228,7 +229,7 @@ h2{
     background-color: #171717;
     border-radius: 0.5rem;
     width: 12em;
-    margin: 1rem;
+    margin: 1.2rem;
 }
 
 .card img{
@@ -251,9 +252,206 @@ h2{
     font-size:0.9rem;
     opacity: 0.9;
     margin-bottom: 1rem;
+    margin-right: 0.5rem;
 }
 
 .card:hover{
     background-color: #1f1f1f;
 }
 
+.player{
+    display: flex;
+}
+.player-playing{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.player-playing>img{
+    margin: 1rem 1rem 1.3rem 0.5rem;
+    width: 3.5rem;
+    border-radius: 0.1rem;
+
+}
+.player-controls{
+    width: 50%;
+    height: 100%;
+}
+
+.player-menu{
+    width:25%;
+    height: 100%;
+}
+
+.playing-text a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    bottom: 0.3rem;
+}
+
+#song-title{
+    font-size:0.8rem;
+    font-weight: 700;
+}
+#author{
+    font-size:0.6rem;
+    font-weight: 600;
+    opacity:0.7;
+}
+
+.playing-text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.playing-icons{
+    display: flex;
+}
+
+.playing-icons img{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin:0.5rem;
+    position: relative;
+    bottom: 0.5rem;
+    left: 1rem;
+    opacity:0.7;
+}
+
+.playing-icons img:hover{
+    opacity: 1;
+}
+
+.player-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controls-icons img{
+    position: relative;
+    bottom: 0.8rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0rem 0.5rem;
+    opacity: 0.5;
+}
+
+#play-button{
+    position: relative;
+    top:-0.1rem;
+    width:2.2rem;
+    height:2.2rem;
+    margin: 0rem 1rem;
+    opacity: 1;
+}
+
+.player-controls-icons img:hover{
+    opacity: 1;
+}
+
+#play-button:hover{
+    transform: scale(1.1);
+}
+
+.player-bar{
+    position: relative;
+    bottom: 0.35rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.player-bar span{
+    position: relative;
+    top:0.1rem;
+}
+
+
+
+.player-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-menu img{
+    height: 1.5rem;
+    width: 1.5rem;
+    color:white;
+    margin: 0rem 0.25rem;
+}
+
+#img1{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+#img2{
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+#img3{
+    height: 1.3rem;
+    width: 1.3rem;
+    opacity: 0.7;
+}
+
+#img4{
+    height: 0.9rem;
+    width: 0.9rem;
+    opacity: 0.7;
+}
+
+#img5{
+    height: 2rem;
+    width: 1.75rem;
+
+}
+.volume{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    bottom: 0.3rem;
+}
+
+#img3:hover{
+    opacity: 1;
+}
+
+#img4:hover{
+    opacity: 1;
+}
+
+ #vol{
+    width: 7rem;
+    height: 0.25rem;
+    border-radius: 10px;
+}
+
+#dur-bar{
+    width: 30rem;
+    position: relative;
+    height: 0.25rem;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 10rem;
+    width: 100%;
+}
+
+.footer hr{
+    width: 100%;
+    position: relative;
+    top:3rem;
+    opacity: 0.2;
+}
