@@ -7,6 +7,7 @@ body{
 }
 div{
     margin: 4px;
+    margin-bottom: 0;
 }
 .main{
     display: flex;
@@ -45,8 +46,13 @@ div{
 .content{
     background-color: #121212;
     flex:1;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     overflow: auto;
+    padding: 1rem;
+    padding-top: 0;
+    appearance: none;
+    scrollbar-width: 1rem;
+    scrollbar-color: hsla(0,0%,100%,.3) transparent;
 }
 
 .player{
@@ -204,3 +210,50 @@ div{
 #install:hover{
     box-shadow: 2px 2px rgb(28, 28, 28);
 }
+
+h2{
+    margin-left: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: space-between;
+
+}
+
+.card{
+    background-color: #171717;
+    border-radius: 0.5rem;
+    width: 12em;
+    margin: 1rem;
+}
+
+.card img{
+    width: 10rem;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.card div{
+    margin-left: 1rem;
+}
+
+.card-title{
+    font-weight:700;
+    margin-top: 0;
+}
+
+.card-des{
+    font-size:0.9rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.card:hover{
+    background-color: #1f1f1f;
+}
+
