@@ -136,3 +136,71 @@ div{
 }
 
 
+.sticky-nav{
+    position: sticky;
+    top:0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background-color: #121212 ;
+}
+
+.sticky-nav-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.sticky-nav-arrows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-nav-arrows img{
+    margin:0.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    opacity: 0.7;
+}
+
+.sticky-nav-arrows img:hover{
+    opacity: 1;
+}
+
+.sticky-nav-icons button{
+    margin:0.5rem;
+}
+
+#user{
+    margin:0.5rem;
+    margin-right: 1rem;
+    margin-left: 0.75rem;
+
+}
+
+#upgrade{
+    width: 8rem;
+    height: 2.2rem;
+}
+
+#install{
+    width: 9rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+}
+
+#install i{
+    margin-right:1rem;
+}
+
+#user:hover{
+    transform: scale(1.03);
+}
+#install:hover{
+    box-shadow: 2px 2px rgb(28, 28, 28);
+}
