@@ -50,11 +50,11 @@
         <div class="content">
             <div class="sticky-nav">
                 <div class="sticky-nav-arrows">
-                    <img src="./assets/backward_icon.png" alt="b-icon">
+                    <img src="./assets/backward_icon.png" class="hide" alt="b-icon">
                     <img src="./assets/forward_icon.png" alt="f-icon">
                 </div>
                 <div class="sticky-nav-icons">
-                    <button class="badge" id="upgrade">Upgrade</button>
+                    <button class="badge hide" id="upgrade">Upgrade</button>
                     <button class="badge" id="install"><i class="fa-solid fa-download"></i>Install App</button>
                     <i class="fa-solid fa-user " id="user"></i>
                 </div>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="player-bar">
                     <span>0:00</span>
-                    <input type="range" name="duration" id="dur-bar" step="1">
+                    <input type="range" name="duration" id="dur-bar" step="1" value="80">
                     <span>2:31</span>
                 </div>
             </div>
@@ -158,10 +158,24 @@
                 <img src="./assets/controls_icon4.png" id="img4" alt="o">
                 <div class="volume">
                     <img src="./assets/controls_icon5.png" id="img5" alt="q">
-                    <input type="range" id="vol" name="volume" step="1">
+                    <input type="range" id="vol" name="volume" step="1" value="50">
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        var slider = document.getElementById("dur-bar");
+        slider.addEventListener("mousemove",function(){
+            var x=slider.value;
+            var color= `linear-gradient(90deg, rgb(0,255,0) ${x}%, #313131 ${x}%)`;
+            slider.style.background=color;
+        })
+        var slid = document.getElementById("vol");
+        slid.addEventListener("mousemove",function(){
+            var y=slid.value;
+            var col= `linear-gradient(90deg, rgb(0,255,0) ${y}%, #313131 ${y}%)`;
+            slid.style.background=col;
+        })
+    </script>
 </body>
 </html>
